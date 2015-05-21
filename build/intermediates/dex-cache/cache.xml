@@ -2,32 +2,32 @@
 <items version="2" >
 
     <item
-        jar="/Users/iguest/Desktop/part2/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/classes.jar"
+        jar="/Users/iguest/Desktop/awty/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/classes.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
-        <dex dex="/Users/iguest/Desktop/part2/app/build/intermediates/pre-dexed/debug/classes-fed9a34a9f288924b3f6656ff31a349b7f5a230e.jar" />
+        <dex dex="/Users/iguest/Desktop/awty/app/build/intermediates/pre-dexed/debug/classes-52a9454e0625c600be7bcf1b1318f7cbb2a3396b.jar" />
     </item>
     <item
-        jar="/Users/iguest/Desktop/part2/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
-        <dex dex="/Users/iguest/Desktop/part2/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-1f8f711284f378109e46cd62dbe1fc1eded3c6fa.jar" />
-    </item>
-    <item
-        jar="/Users/iguest/Desktop/part2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/classes.jar"
+        jar="/Users/iguest/Desktop/awty/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/classes.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
-        <dex dex="/Users/iguest/Desktop/part2/app/build/intermediates/pre-dexed/debug/classes-8751d967280e633ac04876a32d67bc96f8f92d30.jar" />
+        <dex dex="/Users/iguest/Desktop/awty/app/build/intermediates/pre-dexed/debug/classes-bca193f6a4e31168c0d45bac38986d0a01c04fa8.jar" />
+    </item>
+    <item
+        jar="/Users/iguest/Desktop/awty/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="/Users/iguest/Desktop/awty/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-5acdf70a6d665884235e841af87d2d66d936f5fd.jar" />
     </item>
     <item
         jar="/Users/iguest/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
-        <dex dex="/Users/iguest/Desktop/part2/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-4af7d6332c26af2f77965e6927554b935e27e503.jar" />
+        <dex dex="/Users/iguest/Desktop/awty/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-4af7d6332c26af2f77965e6927554b935e27e503.jar" />
     </item>
 
 </items>
