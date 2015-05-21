@@ -8,6 +8,8 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.telephony.SmsManager;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -26,6 +28,16 @@ public class MainActivity extends ActionBarActivity {
     BroadcastReceiver alarmReceiver = new BroadcastReceiver() {
         @Override public void onReceive(final Context c, Intent i) {
             String message = i.getStringExtra("Message");
+            String number = i.getStringExtra("Number");
+            Log.i("MyApp", number);
+
+            try {
+                SmsManager smsManager = SmsManager.getDefault();
+                smsManager.sendTextMessage(number, null, message, null, null);
+            } catch (Exception e) {
+                Toast.makeText(MainActivity.this, "SMS failed, please try again later", Toast.LENGTH_SHORT).show();
+            }
+
             Toast.makeText(MainActivity.this, message, Toast.LENGTH_SHORT).show();
         }
     };
@@ -62,7 +74,8 @@ public class MainActivity extends ActionBarActivity {
                         am = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
                         Intent i = new Intent();
                         i.setAction("setupAlarm");
-                        i.putExtra("Message", phone + ": " + message);
+                        i.putExtra("Message", message);
+                        i.putExtra("Number", phone);
                         alarmIntent = PendingIntent.getBroadcast(MainActivity.this, 0, i, 0);
 
                         am.setRepeating(AlarmManager.RTC, System.currentTimeMillis() + (time * 60000), time * 60000, alarmIntent);
